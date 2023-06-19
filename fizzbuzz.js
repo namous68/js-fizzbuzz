@@ -7,9 +7,19 @@
 'use strict';
 
 var fizzbuzz = function (x) {
-//
-// YOUR CODE GOES HERE
-//
+if(x%3==0 && x%5!=0){
+  console.log("fizz");  
+}
+if(x%5==0 && x%3!=0){
+    console.log("buzz");
+}
+if(x%3==0 && x%5==0){
+    console.log("fizzbuzz");
+}
+if(x%3!=0 && x%5!=0){
+    console.log("number");
+}
+  
 };
 
-module.exports = { fizzbuzz: fizzbuzz };
+fizzbuzz();
